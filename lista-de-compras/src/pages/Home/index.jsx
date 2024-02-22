@@ -1,5 +1,6 @@
 import {useRef, useState} from 'react'
 import {v4} from 'uuid'
+//import { AddButton } from './styles.jsx'
 
 
 
@@ -12,6 +13,7 @@ function Home() {
   function cliqueiNoBotao() {
     console.log(v4())
     setProdutos([{id:v4(), nome:inputRef.current.value}, ...produtos])
+    inputRef.current.value =''
   }
   
   function deletarProduto(id) {
