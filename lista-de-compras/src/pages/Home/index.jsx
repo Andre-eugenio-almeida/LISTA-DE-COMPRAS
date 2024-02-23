@@ -11,9 +11,8 @@ function Home() {
 
 
   function cliqueiNoBotao() {
-    console.log(v4())
-    setProdutos([{id:v4(), nome:inputRef.current.value}, ...produtos])
-    inputRef.current.value =''
+   setProdutos([{id:v4(), nome:inputRef.current.value}, ...produtos])
+   
   }
   
   function deletarProduto(id) {
@@ -25,7 +24,7 @@ function Home() {
     <div>
       <h1>Lista de compras</h1>
       <input placeholder="produto..." ref={inputRef}/>
-      <button onClick={cliqueiNoBotao}>Adicionar</button>
+      <button>Click={cliqueiNoBotao}Adicionar</button>
 
       {
         produtos.map((produto) => (
