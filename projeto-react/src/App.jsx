@@ -1,6 +1,6 @@
 
 
-function App() {
+function Home() {
   
 
   return (
@@ -9,10 +9,10 @@ function App() {
       <div>
 
         <h1>Lista de Compras</h1>
-        
+
       </div>
       
   )
 }
 
-export default App
+export default Home
