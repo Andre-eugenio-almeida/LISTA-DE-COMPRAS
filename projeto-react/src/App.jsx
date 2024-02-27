@@ -7,9 +7,7 @@ function Home() {
     
 
       <div>
-
         <h1>Lista de Compras</h1>
-
       </div>
       
   )
