@@ -42,10 +42,16 @@ export const Product = styled.div `
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 50px;
+    height: 40px;
+    background: #fff;
     border-radius: 5px;
     margin-top: 15px;
+    padding: 0px 10px;
 
+`
+
+export const TrashButton = styled.div `
+    
 
 `
 
