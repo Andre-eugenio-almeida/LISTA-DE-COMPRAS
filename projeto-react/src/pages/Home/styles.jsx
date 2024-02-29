@@ -43,7 +43,8 @@ export const Product = styled.div `
     justify-content: space-between;
     align-items: center;
     height: 50px;
-    
+    border-radius: 5px;
+    margin-top: 15px;
 
 
 `
