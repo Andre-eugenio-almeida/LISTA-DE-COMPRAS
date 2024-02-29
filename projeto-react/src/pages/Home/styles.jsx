@@ -48,10 +48,18 @@ export const Product = styled.div `
     margin-top: 15px;
     padding: 0px 10px;
 
+    p {
+        text-transform: capitalize;
+        font-weight: bolder;
+    }
+
 `
 
 export const TrashButton = styled.div `
-    
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
 
 `
 
