@@ -10,11 +10,13 @@ function Home() {
   function cliqueiNoBotao() {
 
     setProdutos([{ id: v4(), nome: inputRef.current.value }, ...produtos])
+    inputRef.current.value =''
 
   }
 
   function deletarProduto(id) {
-    produtos.filter(produto => produto.id !== id) 
+    setProdutos(produtos.filter(produto => produto.id !== id) )
+   
 
   }
 
