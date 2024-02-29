@@ -26,9 +26,9 @@ function Home() {
 
 
     <Container>
-      <h1>Lista de Compras</h1>
+      <h1>Shopping list</h1>
       <input placeholder="produto..." ref={inputRef} />
-      <AddButton onClick={cliqueiNoBotao}>Adicionar</AddButton>
+      <AddButton onClick={cliqueiNoBotao}>Add</AddButton>
 
       
         {produtos.map((produto) => (
