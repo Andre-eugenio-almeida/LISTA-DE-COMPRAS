@@ -13,6 +13,11 @@ function Home() {
 
   }
 
+  function deletarProduto(id) {
+    produtos.filter(produto => produto.id !== id) 
+
+  }
+
 
   return (
 
@@ -26,7 +31,7 @@ function Home() {
         {produtos.map((produto) => (
           <div key={produto.id}>
             <p>{produto.nome}</p>
-            <button>🗑️</button>
+            <button onClick={() => deletarProduto(produto.id)}>🗑️</button>
           </div>
         ))}
 
