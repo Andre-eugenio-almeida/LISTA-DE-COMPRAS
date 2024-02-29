@@ -1,5 +1,6 @@
 import { useRef, useState } from 'react'
 import { v4 } from 'uuid'
+import { AddButton, Container, Product } from './styles'
 
 function Home() {
   const [produtos, setProdutos] = useState([])
@@ -24,20 +25,20 @@ function Home() {
   return (
 
 
-    <div>
+    <Container>
       <h1>Lista de Compras</h1>
       <input placeholder="produto..." ref={inputRef} />
-      <button onClick={cliqueiNoBotao}>Adicionar</button>
+      <AddButton onClick={cliqueiNoBotao}>Adicionar</AddButton>
 
       
         {produtos.map((produto) => (
-          <div key={produto.id}>
+          <Product key={produto.id}>
             <p>{produto.nome}</p>
             <button onClick={() => deletarProduto(produto.id)}>🗑️</button>
-          </div>
+          </Product>
         ))}
 
-    </div>
+    </Container>
   )
 }
 
